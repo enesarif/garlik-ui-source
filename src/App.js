@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from '@mui/material';
+import { Chart } from './components/Chart';
+import { CHART_LINE } from './constants/colors';
+
+const data = [
+    {
+        day: '24.11.21',
+        price: 12.38,
+    },
+    {
+        day: '25.11.21',
+        price: 12.45,
+    },
+    {
+        day: '26.11.21',
+        price: 12.50,
+    },
+    {
+        day: '27.11.21',
+        price: 12.46,
+    },
+    {
+        day: '28.11.21',
+        price: 12.43,
+    },
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Container maxWidth="sm">
+            <Chart color={CHART_LINE} name="Dolar" domain={[12.0, 13.0]} data={data} />
+        </Container>
+    );
 }
 
 export default App;
