@@ -13,6 +13,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { Container } from '@mui/material';
 import { BLACK_OLIVE } from '../constants/colors';
 import { Navigation } from '../components/Navigation';
+import { Outlet } from 'react-router';
 
 const drawerWidth = 240;
 
@@ -122,7 +123,7 @@ export const Page = ({ children }) => {
             </Drawer>
             <Container maxWidth="sm">
                 <DrawerHeader />
-                {children}
+                <Outlet />
             </Container>
         </Box>
     );
