@@ -1,4 +1,4 @@
-import { CHART_HEADER } from "../constants/colors";
+import { BLACK_OLIVE } from "../constants/colors";
 
 export const ChartHeader = ({ children, ...rest }) =>
-    <h2 style={{ color: CHART_HEADER }} {...rest}>{children}</h2>
+    <h2 style={{ color: BLACK_OLIVE }} {...rest}>{children}</h2>

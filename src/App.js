@@ -1,6 +1,6 @@
-import { Container } from '@mui/material';
 import { Chart } from './components/Chart';
-import { CHART_LINE } from './constants/colors';
+import { KEPPEL } from './constants/colors';
+import { Page } from './templates/Page';
 
 const data = [
     {
@@ -27,9 +27,9 @@ const data = [
 
 function App() {
     return (
-        <Container maxWidth="sm">
-            <Chart color={CHART_LINE} name="Dolar" domain={[12.0, 13.0]} data={data} />
-        </Container>
+        <Page>
+            <Chart color={KEPPEL} name="Dolar" domain={[12.0, 13.0]} data={data} />
+        </Page>
     );
 }
 
