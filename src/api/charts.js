@@ -1,5 +1,5 @@
 import { get } from "./main"
 
 export const getCharts = () => {
-    return get('/charts');
+    return get('/api/charts');
 }
