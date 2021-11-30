@@ -1,9 +1,15 @@
 import { Grid } from "@mui/material";
+import { useEffect } from "react";
+import { getCharts } from "../api/charts";
 import { Button } from "../components/Button";
 import { Header } from "../components/Header";
 import { TextInput } from "../components/TextInput";
 
 export const Charts = () => {
+    useEffect(() => {
+        getCharts().then(data => console.log({ data }));
+    }, []);
+
     return <Grid container spacing={2} justifyContent="right">
         <Grid item xs={12}>
             <Header variant="h4">Grafikleri Düzenle</Header>
