@@ -122,7 +122,7 @@ export const Page = ({ children }) => {
                 <Navigation />
             </Drawer>
             <Container maxWidth="sm">
-                <DrawerHeader />
+                <DrawerHeader style={{ marginBottom: '24px' }} />
                 <Outlet />
             </Container>
         </Box>

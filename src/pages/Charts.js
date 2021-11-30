@@ -1,11 +1,12 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Button } from "../components/Button";
+import { Header } from "../components/Header";
 import { TextInput } from "../components/TextInput";
 
 export const Charts = () => {
-    return <Grid container spacing={2} style={{ marginTop: '24px' }} justifyContent="right">
-        <Grid item xs={12} style={{ marginBottom: '24px' }}>
-            <Typography variant="h3">Grafikleri Düzenle</Typography>
+    return <Grid container spacing={2} justifyContent="right">
+        <Grid item xs={12}>
+            <Header variant="h4">Grafikleri Düzenle</Header>
         </Grid>
         <Grid item xs={12}>
             <TextInput label="URL" />
