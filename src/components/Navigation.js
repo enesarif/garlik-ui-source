@@ -1,17 +1,18 @@
 import { Face, Home, Logout, Timeline } from "@mui/icons-material";
 import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { useNavigate } from "react-router";
+import { CHARTS, HOME } from "../constants/routes";
 
 const pages = [
     {
         title: "Anasayfa",
         icon: <Home />,
-        route: "/",
+        route: HOME,
     },
     {
         title: "Grafik Ekle",
         icon: <Timeline />,
-        route: "/add-chart",
+        route: CHARTS,
     },
     {
         title: true ? "Giriş Yap" : "Çıkış Yap",
