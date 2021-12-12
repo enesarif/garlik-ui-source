@@ -1,2 +1,2 @@
-export const HOME = "/";
-export const CHARTS = "/charts";
+export const HOME = "/ui";
+export const CHARTS = "/ui/charts";
